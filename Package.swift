@@ -9,7 +9,7 @@ let package = Package(
     products: [.library(name: "AudioKitUI", targets: ["AudioKitUI"])],
     dependencies: [
         .package(url: "https://github.com/AudioKit/AudioKit.git", from: "5.6.1"),
-        .package(url: "https://github.com/AudioKit/Controls.git", from: "1.1.0"),
+        .package(url: "https://github.com/AudioKit/Controls.git", branch: "main"),
     ],
     targets: [
         .target(name: "AudioKitUI", dependencies: ["AudioKit", "Controls"], resources: [.process("Resources")]),
